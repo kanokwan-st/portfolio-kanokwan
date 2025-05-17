@@ -3,8 +3,187 @@ import './App.css'
 function App() {
 
   return (
-    <div>
-      My Portfolio
+    <div className='relative min-h-screen bg-[#0E100F] text-[#FEFBE0]'>
+      {/* NAVBAR */}
+      <nav className="sticky top-0 flex justify-between py-5 px-32 bg-[#0E100F]">
+        <div className="flex gap-4">
+          <h1 className='text-lg font-medium'>Kanokwan S.</h1>
+          <a href="#">
+            <img src="/github.png" alt="" className='h-8' />
+          </a>
+          <a href="#">
+            <img src="/linkedin.png" alt="" className='h-8' />
+          </a>
+        </div>
+        <div className="flex gap-16 font-medium">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#project">Project</a>
+          <a href="#miniproject">Mini Project</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+
+      {/* SECTION 1 */}
+      <section className="w-full h-130 px-32">
+        <article className="flex w-full h-[80%]">
+          <div className="flex flex-col justify-center p-4 w-[50%] h-full">
+            <h2 className='text-4xl font-bold mb-4'>Hello 👋</h2>
+            <h2 className='text-2xl font-bold'>
+              I’m <span className='text-violet-400'>KANOKWAN SAE-TAE</span>, a software Developer
+            </h2>
+            <h2 className='text-2xl font-bold'>
+              I love logical thinking and planing.
+            </h2>
+          </div>
+          <figure className="w-[50%] h-full">
+            <img src="/devPic.png" alt="dev pic" className='w-full h-full object-contain' />
+          </figure>
+        </article>
+        <div className="flex justify-center gap-4 p-2">
+            <button className='bg-[#0E100F] text-white py-2 px-4 rounded font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>My Projects</button>
+            <button className='bg-[#0E100F] text-white py-2 px-4 rounded font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>Experience</button>
+        </div>
+      </section>
+      <hr className='m-6 h-[0.5px] w-[90%] bg-[#3B3C37] border-none mx-auto'/>
+
+      {/* SECTION 2 */}
+      <section className="flex flex-col justify-center items-center px-64  w-full h-100">
+        <h2 className='text-2xl font-bold pb-6'>Know Me More</h2>
+        <p className='text-lg text-balance text-center'>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, error rem amet quibusdam odio fuga dolore similique consequatur dolor aut pariatur vitae eligendi asperiores accusantium perferendis sapiente impedit nesciunt laborum.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, nisi, suscipit consequuntur nam perspiciatis eligendi sint expedita quas fugit illum quis, quaerat et temporibus mollitia beatae placeat repellendus recusandae ut.
+        </p>
+      </section>
+      <hr className='m-6 h-[0.5px] w-[90%] bg-[#3B3C37] border-none mx-auto'/>
+
+      {/* SECTION 3 */}
+      <section className="flex flex-col justify-center items-center px-32 w-full h-150">
+        <h2 className='text-2xl font-bold pb-6'>Experience</h2>
+        <button className='bg-[#0E100F] text-white py-2 px-4 rounded font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>Download CV</button>
+        <div className='flex flex-col'>
+          {/* Exp1 */}
+          <div className='flex gap-2'>
+            <p>⚪</p>
+            <hr className='h-full w-1 bg-[#3B3C37] border-0'/>
+            <div>
+              <h3>Junior Software Dev Camp</h3>
+              <p>2024-2025</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate explicabo quis maiores magnam quo molestias voluptatum accusantium minus, facilis qui exercitationem eligendi repellat eveniet fugit? Quaerat dolor aliquid perferendis.</p>
+            </div>
+          </div>
+          {/* Exp2 */}
+          <div className='flex gap-2'>
+            <p>⚪</p>
+            <hr className='h-full w-1 bg-[#3B3C37] border-0'/>
+            <div>
+              <h3>Mechanical Engineer</h3>
+              <p>2024-2025</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate explicabo quis maiores magnam quo molestias voluptatum accusantium minus, facilis qui exercitationem eligendi repellat eveniet fugit? Quaerat dolor aliquid perferendis.</p>
+            </div>
+          </div>
+          {/* Exp3 */}
+          <div className='flex gap-2'>
+            <p>⚪</p>
+            <hr className='h-full w-1 bg-[#3B3C37] border-0'/>
+            <div>
+              <h3>Junior Software Dev Camp</h3>
+              <p>2024-2025</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate explicabo quis maiores magnam quo molestias voluptatum accusantium minus, facilis qui exercitationem eligendi repellat eveniet fugit? Quaerat dolor aliquid perferendis.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr className='m-6 h-[0.5px] w-[90%] bg-[#3B3C37] border-none mx-auto'/>
+
+      {/* SECTION 4 */}
+      <section className="flex flex-col justify-center items-center lg:px-50 xl:px-80 py-4 w-full h-100">
+        <h2 className='flex items-center justify-center w-full h-10 text-2xl font-bold'>Skill Set</h2>
+        <div className='w-full flex gap-10 p-8'>
+          {/* BOX 1 */}
+          <div className='w-full flex flex-col items-center'>
+            <h3 className='pb-4 text-xl font-semibold'>Frontend</h3>
+            <div className='flex flex-wrap justify-center gap-2'>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>HTML</button>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>CSS</button>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>JavaScript</button>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>React</button>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>Tailwind</button>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>MUI</button>
+            </div>
+          </div>
+          {/* BOX 2 */}
+          <div className='w-full flex flex-col items-center'>
+            <h3 className='pb-4 text-xl font-semibold'>Backend</h3>
+            <div className='flex flex-wrap justify-center gap-2'>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>Node.js</button>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>SQLite</button>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>MongoDB</button>
+            </div>
+          </div>
+          {/* BOX 3 */}
+          <div className='w-full flex flex-col items-center'>
+            <h3 className='pb-4 text-xl font-semibold'>Tools</h3>
+            <div className='flex flex-wrap justify-center gap-2'>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>Git</button>
+              <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>VScode</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr className='m-6 h-[0.5px] w-[90%] bg-[#3B3C37] border-none mx-auto'/>
+
+      {/* SECTION 5 */}
+      <section className="flex flex-col justify-center items-center px-32 py-10 w-full h-100 bg-amber-700">
+        <h2 className='bg-amber-800 flex items-center justify-center w-full h-10 text-2xl font-bold'>My Project</h2>
+        <article className="flex w-full h-full">
+          <figure className="flex items-center justify-center w-[50%] h-full bg-red-200">
+            <img src="/webpic.png" alt="dev pic" className='w-[80%] h-[90%] object-contain' />
+          </figure>
+          <div className="flex flex-col p-12 w-[50%] h-full bg-gray-700">
+            <div className='flex items-center gap-8'>
+              <h3 className='pb-4 text-2xl font-semibold'>Collectico</h3>
+              <div className='flex items-center gap-1'>
+                <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>Vercel</button>
+                <button className='bg-[#0E100F] text-white py-1.5 px-3 rounded-4xl font-medium border-2 border-[#FEFBE0] hover:bg-[#FEFBE0] hover:text-black'>Github</button>
+              </div>
+            </div>
+            <div className='pt-8'>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat ut, quos doloribus molestias quod voluptates est tempora rem! Minima eveniet laudantium ut sed libero, omnis tempora iusto tempore dolorem natus!</p>
+            </div>
+            <div></div>
+          </div>
+          
+        </article>
+      </section>
+      <hr className='m-6 h-[0.5px] w-[90%] bg-[#3B3C37] border-none mx-auto'/>
+
+      {/* SECTION 6 */}
+      <section className="flex flex-col justify-center items-center px-32  w-full h-100 bg-amber-700">
+        <h2>Mini Project</h2>
+        <div className='grid grid-cols-3 gap-x-8 gap-y-4'>
+          <div className='w-20 h-20 bg-gray-400'></div>
+          <div className='w-20 h-20 bg-gray-400'></div>
+          <div className='w-20 h-20 bg-gray-400'></div>
+          <div className='w-20 h-20 bg-gray-400'></div>
+          <div className='w-20 h-20 bg-gray-400'></div>
+          <div className='w-20 h-20 bg-gray-400'></div>
+        </div>
+      </section>
+      <hr className='m-6 h-[0.5px] w-[90%] bg-[#3B3C37] border-none mx-auto'/>
+
+      {/* SECTION 7 */}
+      <section className="flex flex-col justify-center items-center px-32  w-full h-50 bg-amber-700">
+        <h2>Find ME ON</h2>
+        <div className='flex gap-3'>
+          <div className='w-20 h-20 bg-gray-400'></div>
+          <div className='w-20 h-20 bg-gray-400'></div>
+          <div className='w-20 h-20 bg-gray-400'></div>
+        </div>
+      </section>
+      <hr className='m-6 h-[0.5px] w-[90%] bg-[#3B3C37] border-none mx-auto'/>
+
     </div>
   )
 }
